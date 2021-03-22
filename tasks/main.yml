@@ -1,6 +1,6 @@
 ---
-- name: install nrpe
-  apt: state=latest pkg={{item}} update_cache=yes
+- apt: state=latest pkg={{item}} update_cache=yes
+  name: install nrpe
   with_items:
     - nagios-plugins-standard
     - libnagios-plugin-perl
